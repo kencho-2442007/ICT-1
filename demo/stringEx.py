@@ -9,4 +9,4 @@ b=2
 c=a+b
 print(type(c)) #Data Type of c is int
 c=str(c) #Type Casting
-print(c) #Data Type of c is now str
+print(c) #Data Type of c is now  
