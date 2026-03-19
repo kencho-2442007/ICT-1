@@ -6,3 +6,4 @@ Full_marks=100
 print(type(Full_marks))
 Full_marks=float(Full_marks)
 print(type(Full_marks))
+print(Full_marks)
