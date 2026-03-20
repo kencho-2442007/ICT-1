@@ -1,8 +1,14 @@
 a=10
 b=5
 addition_result=a+b
+print(addition_result)
 subbtraction_result=a-b
+print(subbtraction_result)
 multiplication_result=a*b
+print(multiplication_result)
 division_result=a/b
+print(division_result)
 exponentiation_result=a**b
+print(exponentiation_result)
 modulus_result=a%b
+print(modulus_result)
