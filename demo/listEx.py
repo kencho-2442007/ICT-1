@@ -1,0 +1,20 @@
+my_list=[1,2,3,"Hello",3.14,True]
+my_repeated_list=[3]*3
+print(my_list)
+print(type(my_list))
+print(my_repeated_list)
+print(my_list[1])
+my_list.append("world")
+print(my_list)
+my_list.extend([4,5,6])
+print(my_list)
+my_list.insert(0,"start")
+print(my_list)
+my_list.remove(3)
+print(my_list)
+my_list.pop()
+print(my_list)
+del my_list[-1]
+print(my_list)
+my_repeated_list.clear()
+print(my_repeated_list)
