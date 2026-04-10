@@ -39,31 +39,31 @@ while True:
         # confirm that the student has been added
         print("Student added successfully!")
 
-        # Display all student records after adding
+        # print out all students record after adding
         print("Current Student Records:")
 
-        # Loop through dictionary and print each students data
+        # and loop through dictionary and then print each students data
         for key, value in students_dict.items():
-            #key represents student name
-            #value is another dictionary containing age and grade
+            #the key in here represents student name
+            #and the value is another dictionary containing age and grade of students
             print(f"Name: {key}, Age: {value['age']}, Grade: {value['grade']}")
 
     # OPTION 2: SEARCH STUDENT
     elif choice == "2":
-        # Ask the user to enter the name of the student to search
+        # here ask the user to enter the name of the student inorder search
         name = input("Enter student name to search: ")
 
-        # Check if the student exists in the dictionary
+        # then check if the student exists in the dictionary
         if name in students_dict:
-            # If found, display confirmation message
+            # If the student is found then display confirmation message
             print("Student Found!")
 
-            # Retrieve and display student details from dictionary
+            # then retrieve and display the students details from dictionary
             print(f"Name: {name}")
             print(f"Age: {students_dict[name]['age']}")
             print(f"Grade: {students_dict[name]['grade']}")
         else:
-            # If student is not found, inform the user
+            # and if student is not found, inform the user
             print("Student not found!")
 
     # OPTION 3: REMOVE STUDENT
@@ -83,16 +83,16 @@ while True:
             # Confirm successful deletion
             print("Student removed successfully!")
         else:
-            # If the student does not exist, show message
+            # If the student does not exist, display the message
             print("Student not found!")
 
     # OPTION 4: EXIT PROGRAM
     elif choice == "4":
-        #display exit message
+        #show exit message
         print("Exiting program...")
-        break  # Stop the loop and end program
+        break  # then stop the loop and end program.
 
     # INVALID INPUT
     else:
-        #If user enters anything other than 1–4
+        #If then user enters anything other than 1–4 then 
         print("Invalid choice! Please try again.")
