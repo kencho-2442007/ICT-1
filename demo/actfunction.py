@@ -22,6 +22,14 @@ def check_result(average):
 average = calculate_average(mark1, mark2, mark3)
 print("The result if average >= 50:", check_result(average))
 
+def check_even_odd(num):
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+number = int(input("Enter a number: "))
+print(check_even_odd(number))
 
 
 
