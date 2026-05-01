@@ -24,6 +24,6 @@ double= map (lambda x: x*2, mylist)
 print(list(double))
 
 #convert result of double to my list
-double= map (lambda x: x*2, mylist)
-mylist= map (lambda x: x/2, double)
-print(list(mylist))
+mynewlist= (list(double))
+kencho = map (lambda x: x/2, mynewlist)
+print(mylist)
