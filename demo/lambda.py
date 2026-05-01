@@ -21,9 +21,10 @@ print(list(even))
 #map
 mylist= [1,2,3,4]
 double= map (lambda x: x*2, mylist)
-print(list(double))
+#print(list(double))
 
 #convert result of double to my list
 mynewlist= (list(double))
-kencho = map (lambda x: x/2, mynewlist)
-print(mylist)
+print(mynewlist)
+decision = map (lambda x: x/2, mynewlist)
+print(list(decision))
