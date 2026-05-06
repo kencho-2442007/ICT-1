@@ -1,9 +1,22 @@
 greetings = open("hello.txt","r")
 print(greetings)
+
 greetings.close()
+
 f=open("hello.txt","r")
 print("filename:",f.name)
 print("file mode:", f.mode)
 print("is file closed?:",f.closed)
 f.close()
 print("is file closed?:", f.closed)
+
+f=open("hello.txt","r")
+contents=f.read()
+print(contents)
+f.close()
+
+
+
+
+
+
