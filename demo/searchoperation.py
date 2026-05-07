@@ -1,43 +1,23 @@
-# Search Operation Program
-
-# Step 1: Create a file and store student details
-file = open("students.txt", "w")
-
-file.write("08250271 kencho\n")
-file.write("08250272 sonam\n")
-file.write("08250273 chundu\n")
-file.write("08250273 Dema\n")
-file.write("08250274 Tshagay\n")
-
+file = open('Students.xlsx', 'w')
+file.write("Name, ID\n")
+file.write("kencho, 001\n")
+file.write("sonam, 002\n")
+file.write("pema, 003\n")
+file.write("tshering, 004\n")
+file.write("tshagay, 005\n")
 file.close()
-print("students.txt file created successfully!")
-
-# Step 2: Read the file
-file = open("students.txt", "r")
-
-print("\nStudent Records:")
-print(file.read())
-
+file = open('Students.xlsx', 'r')
+students = file.read()
+print(students)
 file.close()
-
-# Step 3: Ask user to input a student name
-search_name = input("Enter student name to search: ")
-
-# Step 4: Check whether the name exists or not
-file = open("students.txt", "r")
-
+searchN = input("Enter a name to search: ")
 found = False
-
-for line in file:
-    if search_name.lower() in line.lower():
-        found = True
-        break
-
-file.close()
-
-# Step 5: Display result
-
-if found:
-    print(search_name, "exists in the file.")
-else:
-    print(search_name, "does not exist in the file.")
+with open('Students.xlsx', 'r') as file:
+    for student in file:
+        if searchN.lower() in student.lower():
+            print(student)
+            found = True
+            break
+if not found:
+    print("Name not found in the file.")
+print()
