@@ -1,0 +1,24 @@
+==================================================
+       STUDENTS WITH IDs ENDING IN 6 OR 7
+==================================================
+
+Total number of students found: 6
+
+Names of selected students:
+------------------------------
+  1. Dorji Tshering (ID: 08250266)
+  2. Dorji Tshering (ID: 08250267)
+  3. Namdrel Zangpo (ID: 08250276)
+  4. Namrata Gurung (ID: 08250277)
+  5. Sumitra Allay (ID: 08250286)
+  6. Thubten Ugyen Norbu (ID: 08250287)
+
+--------------------------------------------------
+First Student (by ID):
+  ID   : 08250266
+  Name : Dorji Tshering
+
+Last Student (by ID):
+  ID   : 08250287
+  Name : Thubten Ugyen Norbu
+==================================================
